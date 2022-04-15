@@ -12,3 +12,34 @@ struct RoundedShape: Shape {
         return Path(path.cgPath)
     }
 }
+
+let GradientHeader = [
+                      Color(red: 0.99, green: 0.32, blue: 0.52, opacity: 1),
+                      Color(red: 0.42, green: 0.31, blue: 0.45, opacity: 1),
+                      Color(red: 0.21, green: 0.31, blue: 0.42, opacity: 1),
+                      ]
+
+    
+let ColorBorderFiedls = Color(red: 0.21, green: 0.31, blue: 0.42, opacity: 1)
+    
+//formatador.dateFormat = "dd/MM/yyyy HH:mm"
+
+struct FormatadorDeData {
+        
+    func FormatDataInString(_ data: Date) -> String {
+        let formatador = DateFormatter()
+        formatador.timeZone = TimeZone(abbreviation: "GMT-3")
+        formatador.dateFormat = "dd/MM/yyyy"
+        
+        return formatador.string(from: data)
+    }
+    
+    func FormatStringInData(_ data: String) -> Date? {
+        let formatador = DateFormatter()
+        formatador.timeZone = TimeZone(abbreviation: "GMT-3")
+        formatador.dateFormat = "dd/MM/yyyy HH:mm"
+        
+        return formatador.date(from: data)
+    }
+}
+

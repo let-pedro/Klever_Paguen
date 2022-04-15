@@ -11,7 +11,7 @@ import SwiftUI
 struct Klever_PaguenApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            RegitrarView()
         }
     }
 }
