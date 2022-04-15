@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F34964892807D0CE006625D8 /* CellListaBoletos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34964882807D0CE006625D8 /* CellListaBoletos.swift */; };
+		F349648E2807E343006625D8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349648D2807E343006625D8 /* HeaderView.swift */; };
+		F34964962807E569006625D8 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34964952807E569006625D8 /* HomeService.swift */; };
+		F349649E2807E609006625D8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349649D2807E608006625D8 /* HomeViewModel.swift */; };
+		F39EAC2128073D9300C2E8A4 /* Klever_PaguenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAC2028073D9300C2E8A4 /* Klever_PaguenApp.swift */; };
+		F39EAC2528073D9A00C2E8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39EAC2428073D9A00C2E8A4 /* Assets.xcassets */; };
+		F39EAC2828073D9A00C2E8A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39EAC2728073D9A00C2E8A4 /* Preview Assets.xcassets */; };
+		F39EAC3328073D9B00C2E8A4 /* Klever_PaguenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAC3228073D9B00C2E8A4 /* Klever_PaguenTests.swift */; };
+		F39EAC3E28073D9B00C2E8A4 /* Klever_PaguenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAC3D28073D9B00C2E8A4 /* Klever_PaguenUITests.swift */; };
+		F39EAC6E280754DE00C2E8A4 /* Boleto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAC6D280754DE00C2E8A4 /* Boleto.swift */; };
+		F39EAC89280769C900C2E8A4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F39EAC88280769C900C2E8A4 /* Alamofire */; };
+		F3D8AAEC2807C52200A88585 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8AAEB2807C52200A88585 /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F39EAC2F28073D9B00C2E8A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F39EAC1528073D9300C2E8A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F39EAC1C28073D9300C2E8A4;
+			remoteInfo = Klever_Paguen;
+		};
+		F39EAC3A28073D9B00C2E8A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F39EAC1528073D9300C2E8A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F39EAC1C28073D9300C2E8A4;
+			remoteInfo = Klever_Paguen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F34964882807D0CE006625D8 /* CellListaBoletos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellListaBoletos.swift; sourceTree = "<group>"; };
+		F349648D2807E343006625D8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F34964952807E569006625D8 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		F349649D2807E608006625D8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F39EAC1D28073D9300C2E8A4 /* Klever_Paguen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klever_Paguen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39EAC2028073D9300C2E8A4 /* Klever_PaguenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Klever_PaguenApp.swift; sourceTree = "<group>"; };
+		F39EAC2428073D9A00C2E8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F39EAC2728073D9A00C2E8A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F39EAC2928073D9A00C2E8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F39EAC2E28073D9B00C2E8A4 /* Klever_PaguenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Klever_PaguenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39EAC3228073D9B00C2E8A4 /* Klever_PaguenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Klever_PaguenTests.swift; sourceTree = "<group>"; };
+		F39EAC3428073D9B00C2E8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F39EAC3928073D9B00C2E8A4 /* Klever_PaguenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Klever_PaguenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39EAC3D28073D9B00C2E8A4 /* Klever_PaguenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Klever_PaguenUITests.swift; sourceTree = "<group>"; };
+		F39EAC3F28073D9B00C2E8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F39EAC6D280754DE00C2E8A4 /* Boleto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boleto.swift; sourceTree = "<group>"; };
+		F3D8AAEB2807C52200A88585 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F39EAC1A28073D9300C2E8A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39EAC89280769C900C2E8A4 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39EAC2B28073D9B00C2E8A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39EAC3628073D9B00C2E8A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F337DCC32807C3D900241BFD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F350F65528085AFE0095854D /* Model */,
+				F34964942807E54F006625D8 /* Networking */,
+				F34964932807E544006625D8 /* ViewModel */,
+				F3D8AAEA2807C51000A88585 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F34964932807E544006625D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F349649D2807E608006625D8 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F34964942807E54F006625D8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F34964952807E569006625D8 /* HomeService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F350F65528085AFE0095854D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F39EAC6D280754DE00C2E8A4 /* Boleto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F39EAC1428073D9300C2E8A4 = {
+			isa = PBXGroup;
+			children = (
+				F39EAC1F28073D9300C2E8A4 /* Klever_Paguen */,
+				F39EAC3128073D9B00C2E8A4 /* Klever_PaguenTests */,
+				F39EAC3C28073D9B00C2E8A4 /* Klever_PaguenUITests */,
+				F39EAC1E28073D9300C2E8A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F39EAC1E28073D9300C2E8A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F39EAC1D28073D9300C2E8A4 /* Klever_Paguen.app */,
+				F39EAC2E28073D9B00C2E8A4 /* Klever_PaguenTests.xctest */,
+				F39EAC3928073D9B00C2E8A4 /* Klever_PaguenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F39EAC1F28073D9300C2E8A4 /* Klever_Paguen */ = {
+			isa = PBXGroup;
+			children = (
+				F39EAC4E28073DF700C2E8A4 /* Application */,
+				F39EAC4F28073E0C00C2E8A4 /* Scenes */,
+				F39EAC2928073D9A00C2E8A4 /* Info.plist */,
+				F39EAC2628073D9A00C2E8A4 /* Preview Content */,
+			);
+			path = Klever_Paguen;
+			sourceTree = "<group>";
+		};
+		F39EAC2628073D9A00C2E8A4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F39EAC2728073D9A00C2E8A4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F39EAC3128073D9B00C2E8A4 /* Klever_PaguenTests */ = {
+			isa = PBXGroup;
+			children = (
+				F39EAC3228073D9B00C2E8A4 /* Klever_PaguenTests.swift */,
+				F39EAC3428073D9B00C2E8A4 /* Info.plist */,
+			);
+			path = Klever_PaguenTests;
+			sourceTree = "<group>";
+		};
+		F39EAC3C28073D9B00C2E8A4 /* Klever_PaguenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F39EAC3D28073D9B00C2E8A4 /* Klever_PaguenUITests.swift */,
+				F39EAC3F28073D9B00C2E8A4 /* Info.plist */,
+			);
+			path = Klever_PaguenUITests;
+			sourceTree = "<group>";
+		};
+		F39EAC4E28073DF700C2E8A4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F39EAC2028073D9300C2E8A4 /* Klever_PaguenApp.swift */,
+				F39EAC2428073D9A00C2E8A4 /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F39EAC4F28073E0C00C2E8A4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F337DCC32807C3D900241BFD /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F3D8AAEA2807C51000A88585 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8AAF32807C52C00A88585 /* SubViews */,
+				F3D8AAEB2807C52200A88585 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3D8AAF32807C52C00A88585 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				F34964882807D0CE006625D8 /* CellListaBoletos.swift */,
+				F349648D2807E343006625D8 /* HeaderView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F39EAC1C28073D9300C2E8A4 /* Klever_Paguen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39EAC4228073D9B00C2E8A4 /* Build configuration list for PBXNativeTarget "Klever_Paguen" */;
+			buildPhases = (
+				F39EAC1928073D9300C2E8A4 /* Sources */,
+				F39EAC1A28073D9300C2E8A4 /* Frameworks */,
+				F39EAC1B28073D9300C2E8A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Klever_Paguen;
+			packageProductDependencies = (
+				F39EAC88280769C900C2E8A4 /* Alamofire */,
+			);
+			productName = Klever_Paguen;
+			productReference = F39EAC1D28073D9300C2E8A4 /* Klever_Paguen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F39EAC2D28073D9B00C2E8A4 /* Klever_PaguenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39EAC4528073D9B00C2E8A4 /* Build configuration list for PBXNativeTarget "Klever_PaguenTests" */;
+			buildPhases = (
+				F39EAC2A28073D9B00C2E8A4 /* Sources */,
+				F39EAC2B28073D9B00C2E8A4 /* Frameworks */,
+				F39EAC2C28073D9B00C2E8A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F39EAC3028073D9B00C2E8A4 /* PBXTargetDependency */,
+			);
+			name = Klever_PaguenTests;
+			productName = Klever_PaguenTests;
+			productReference = F39EAC2E28073D9B00C2E8A4 /* Klever_PaguenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F39EAC3828073D9B00C2E8A4 /* Klever_PaguenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39EAC4828073D9B00C2E8A4 /* Build configuration list for PBXNativeTarget "Klever_PaguenUITests" */;
+			buildPhases = (
+				F39EAC3528073D9B00C2E8A4 /* Sources */,
+				F39EAC3628073D9B00C2E8A4 /* Frameworks */,
+				F39EAC3728073D9B00C2E8A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F39EAC3B28073D9B00C2E8A4 /* PBXTargetDependency */,
+			);
+			name = Klever_PaguenUITests;
+			productName = Klever_PaguenUITests;
+			productReference = F39EAC3928073D9B00C2E8A4 /* Klever_PaguenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F39EAC1528073D9300C2E8A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F39EAC1C28073D9300C2E8A4 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					F39EAC2D28073D9B00C2E8A4 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F39EAC1C28073D9300C2E8A4;
+					};
+					F39EAC3828073D9B00C2E8A4 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F39EAC1C28073D9300C2E8A4;
+					};
+				};
+			};
+			buildConfigurationList = F39EAC1828073D9300C2E8A4 /* Build configuration list for PBXProject "Klever_Paguen" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F39EAC1428073D9300C2E8A4;
+			packageReferences = (
+				F39EAC87280769C900C2E8A4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = F39EAC1E28073D9300C2E8A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F39EAC1C28073D9300C2E8A4 /* Klever_Paguen */,
+				F39EAC2D28073D9B00C2E8A4 /* Klever_PaguenTests */,
+				F39EAC3828073D9B00C2E8A4 /* Klever_PaguenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F39EAC1B28073D9300C2E8A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39EAC2828073D9A00C2E8A4 /* Preview Assets.xcassets in Resources */,
+				F39EAC2528073D9A00C2E8A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39EAC2C28073D9B00C2E8A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39EAC3728073D9B00C2E8A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F39EAC1928073D9300C2E8A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D8AAEC2807C52200A88585 /* HomeView.swift in Sources */,
+				F39EAC6E280754DE00C2E8A4 /* Boleto.swift in Sources */,
+				F34964962807E569006625D8 /* HomeService.swift in Sources */,
+				F34964892807D0CE006625D8 /* CellListaBoletos.swift in Sources */,
+				F349649E2807E609006625D8 /* HomeViewModel.swift in Sources */,
+				F349648E2807E343006625D8 /* HeaderView.swift in Sources */,
+				F39EAC2128073D9300C2E8A4 /* Klever_PaguenApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39EAC2A28073D9B00C2E8A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39EAC3328073D9B00C2E8A4 /* Klever_PaguenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39EAC3528073D9B00C2E8A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39EAC3E28073D9B00C2E8A4 /* Klever_PaguenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F39EAC3028073D9B00C2E8A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F39EAC1C28073D9300C2E8A4 /* Klever_Paguen */;
+			targetProxy = F39EAC2F28073D9B00C2E8A4 /* PBXContainerItemProxy */;
+		};
+		F39EAC3B28073D9B00C2E8A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F39EAC1C28073D9300C2E8A4 /* Klever_Paguen */;
+			targetProxy = F39EAC3A28073D9B00C2E8A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F39EAC4028073D9B00C2E8A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F39EAC4128073D9B00C2E8A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F39EAC4328073D9B00C2E8A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Klever_Paguen/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Klever_Paguen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Klever-Paguen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F39EAC4428073D9B00C2E8A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Klever_Paguen/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Klever_Paguen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Klever-Paguen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F39EAC4628073D9B00C2E8A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Klever_PaguenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Klever-PaguenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klever_Paguen.app/Klever_Paguen";
+			};
+			name = Debug;
+		};
+		F39EAC4728073D9B00C2E8A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Klever_PaguenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Klever-PaguenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klever_Paguen.app/Klever_Paguen";
+			};
+			name = Release;
+		};
+		F39EAC4928073D9B00C2E8A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Klever_PaguenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Klever-PaguenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Klever_Paguen;
+			};
+			name = Debug;
+		};
+		F39EAC4A28073D9B00C2E8A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Klever_PaguenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Klever-PaguenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Klever_Paguen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F39EAC1828073D9300C2E8A4 /* Build configuration list for PBXProject "Klever_Paguen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39EAC4028073D9B00C2E8A4 /* Debug */,
+				F39EAC4128073D9B00C2E8A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F39EAC4228073D9B00C2E8A4 /* Build configuration list for PBXNativeTarget "Klever_Paguen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39EAC4328073D9B00C2E8A4 /* Debug */,
+				F39EAC4428073D9B00C2E8A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F39EAC4528073D9B00C2E8A4 /* Build configuration list for PBXNativeTarget "Klever_PaguenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39EAC4628073D9B00C2E8A4 /* Debug */,
+				F39EAC4728073D9B00C2E8A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F39EAC4828073D9B00C2E8A4 /* Build configuration list for PBXNativeTarget "Klever_PaguenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39EAC4928073D9B00C2E8A4 /* Debug */,
+				F39EAC4A28073D9B00C2E8A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F39EAC87280769C900C2E8A4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F39EAC88280769C900C2E8A4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F39EAC87280769C900C2E8A4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F39EAC1528073D9300C2E8A4 /* Project object */;
+}
