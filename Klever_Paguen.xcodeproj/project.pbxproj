@@ -11,6 +11,8 @@
 		F349648E2807E343006625D8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349648D2807E343006625D8 /* HeaderView.swift */; };
 		F34964962807E569006625D8 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34964952807E569006625D8 /* HomeService.swift */; };
 		F349649E2807E609006625D8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349649D2807E608006625D8 /* HomeViewModel.swift */; };
+		F388FDFE2809BDAE007668BB /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FDFD2809BDAE007668BB /* Styles.swift */; };
+		F388FE142809CF6A007668BB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F388FE132809CF6A007668BB /* Launch Screen.storyboard */; };
 		F39EAC2128073D9300C2E8A4 /* Klever_PaguenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAC2028073D9300C2E8A4 /* Klever_PaguenApp.swift */; };
 		F39EAC2528073D9A00C2E8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39EAC2428073D9A00C2E8A4 /* Assets.xcassets */; };
 		F39EAC2828073D9A00C2E8A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39EAC2728073D9A00C2E8A4 /* Preview Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		F349648D2807E343006625D8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F34964952807E569006625D8 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		F349649D2807E608006625D8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F388FDFD2809BDAE007668BB /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		F388FE132809CF6A007668BB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F39EAC1D28073D9300C2E8A4 /* Klever_Paguen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klever_Paguen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39EAC2028073D9300C2E8A4 /* Klever_PaguenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Klever_PaguenApp.swift; sourceTree = "<group>"; };
 		F39EAC2428073D9A00C2E8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30568C22809457F00D1577F /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				F388FE132809CF6A007668BB /* Launch Screen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		F337DCC32807C3D900241BFD /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F388FDFC2809BD84007668BB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F388FDFD2809BDAE007668BB /* Styles.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		F39EAC1428073D9300C2E8A4 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +162,7 @@
 		F39EAC1F28073D9300C2E8A4 /* Klever_Paguen */ = {
 			isa = PBXGroup;
 			children = (
+				F388FDFC2809BD84007668BB /* New Group */,
 				F39EAC4E28073DF700C2E8A4 /* Application */,
 				F39EAC4F28073E0C00C2E8A4 /* Scenes */,
 				F39EAC2928073D9A00C2E8A4 /* Info.plist */,
@@ -188,6 +209,7 @@
 		F39EAC4F28073E0C00C2E8A4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F30568C22809457F00D1577F /* Launch */,
 				F337DCC32807C3D900241BFD /* Home */,
 			);
 			path = Scenes;
@@ -320,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F388FE142809CF6A007668BB /* Launch Screen.storyboard in Resources */,
 				F39EAC2828073D9A00C2E8A4 /* Preview Assets.xcassets in Resources */,
 				F39EAC2528073D9A00C2E8A4 /* Assets.xcassets in Resources */,
 			);
@@ -346,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F388FDFE2809BDAE007668BB /* Styles.swift in Sources */,
 				F3D8AAEC2807C52200A88585 /* HomeView.swift in Sources */,
 				F39EAC6E280754DE00C2E8A4 /* Boleto.swift in Sources */,
 				F34964962807E569006625D8 /* HomeService.swift in Sources */,
