@@ -1,9 +1,13 @@
 
-//FormatadorDeData().getData(recibo.data),
 import Foundation
 
 
 class RegistrarViewModel: ObservableObject {
+    
+    @Published  var nomeBoletoTextField: String = ""
+    @Published  var dataVencimentoTextField: Date  = Date()
+    @Published  var valorTextField: String = ""
+    @Published  var barcodeTextField: String = ""
     
     let service: RegistrarService
     
@@ -12,17 +16,18 @@ class RegistrarViewModel: ObservableObject {
     }
     
     
-    func novoRegistro(_ DadosBoleto: boleto){
-                
+    func novoRegistro(){
+        guard let valor = Int(valorTextField) else { return }
+        
         let parametros: [String: Any] = [
-            "nome_do_Boleto": DadosBoleto.nome,
-            "data_vecimento": DadosBoleto.vecimento,
-            "valor": DadosBoleto.valor,
-            "barcode": DadosBoleto.barcode
+            "nome_do_Boleto": nomeBoletoTextField,
+            "data_vecimento": FormatadorDeData().FormatDataInString(dataVencimentoTextField),
+            "valor": valor,
+            "barcode": barcodeTextField
         ]
         
         service.post(parametros) { Result in
-            
+
             switch Result {
             case true:
                 print("Sucesso")

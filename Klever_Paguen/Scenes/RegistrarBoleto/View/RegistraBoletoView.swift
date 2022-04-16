@@ -3,120 +3,41 @@ import SwiftUI
 
 struct RegistraBoletoView: View {
     
-    // Attributes
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @StateObject var viewModel = RegistrarViewModel()
-    @State  var nomeBoletoTextField: String = ""
-    @State  var dataVencimentoTextField: Date  = Date()
-    @State  var valorTextField: String = ""
-    @State  var barcodeTextField: String = ""
 
-    
     var body: some View {
-        
         GeometryReader { view in
-
-            ScrollView {
+            ScrollView(.vertical, showsIndicators: false) {
                 HStack {
                     Text("Cadastra Boleto")
-                        .font(.custom("Gilroy", size: 20))
+                        .font(.custom("Gilroy", size: self.horizontalSizeClass == .compact ? 20: 30))
                         .foregroundColor(.white)
                     
                 }
-                .frame(maxWidth: view.size.width)
-                .frame(height: 108)
+                .frame(width: view.size.width, height: self.horizontalSizeClass == .compact ? 108: 120)
                 .background(LinearGradient(gradient: Gradient(colors: Colors().GradientHeader ), startPoint: .topLeading, endPoint: .bottomTrailing))
                 
-                
-                VStack(spacing: 20) {
-                                HStack {
-                                    Image("bill_icon")
-                                        .resizable()
-                                        .frame(width: 20, height: 20)
-                                        .padding()
-                
-                                    TextField("Nome do Boleto", text: $nomeBoletoTextField)
-                                        .padding(.leading,12)
-                                        .font(.system(size: 15))
-                
-                                }
-                                .frame(width: view.size.width, height: 45)
-                                .background(RoundedRectangle(cornerRadius: 6).stroke(Colors().ColorBorderFiedls))
-                
-                                HStack {
-                                    Image("calendar_icon")
-                                        .resizable()
-                                        .frame(width: 20, height: 20)
-                                        .padding()
-                
-                
-                                    DatePicker("Vencimento", selection: $dataVencimentoTextField, displayedComponents: .date)
-                
-                                }
-                                .frame(width: view.size.width, height: 45)
-                                .background(RoundedRectangle(cornerRadius: 6).stroke(Colors().ColorBorderFiedls))
-                
-                
-                                HStack(spacing: 20) {
-                                    Image("money_icon")
-                                        .resizable()
-                                        .frame(width: 20, height: 20)
-                                        .padding()
-                
-                
-                                    TextField("Valor", text: $valorTextField)
-                                        .padding(.leading,12)
-                                        .font(.system(size: 15))
-                
-                                }
-                                .frame(width: view.size.width, height: 45)
-                                .background(RoundedRectangle(cornerRadius: 6).stroke(Colors().ColorBorderFiedls))
-                
-                
-                                HStack(spacing: 20) {
-                                    Image("barcode_icon")
-                                        .resizable()
-                                        .frame(width: 20, height: 20)
-                                        .padding()
-                
-                
-                                    TextField("Código de barrar", text: $barcodeTextField)
-                                        .padding(.leading,12)
-                                        .font(.system(size: 15))
-                                }
-                                .frame(width: view.size.width, height: 45)
-                                .background(RoundedRectangle(cornerRadius: 6).stroke(Colors().ColorBorderFiedls))
-  
-                }
-                
-                Spacer()
-                
-                Button {
-                    guard let varlorField = Int(valorTextField) else { return }
-                    
-                    viewModel.novoRegistro(boleto(nome: nomeBoletoTextField,
-                                                  vecimento: FormatadorDeData().FormatDataInString(dataVencimentoTextField),
-                                                  valor: varlorField,
-                                                  barcode: barcodeTextField))
-                } label : {
+                FieldsView()
+                    .frame(width: view.size.width, height: self.horizontalSizeClass == .compact ? 108: 300, alignment: .center)
+
+                Button(action: viewModel.novoRegistro){
                     HStack {
                         Spacer()
                         Text("Salvar")
-                            .font(.custom("Avenir Medium", size: 17))
+                            .font(.custom("Avenir Medium", size: self.horizontalSizeClass == .compact ? 17: 22))
                             .foregroundColor(.white)
-                        
+                    
                         Spacer()
                     }
-                    .foregroundColor(.white)
                     .padding(.vertical)
-                        .background(Color.blue)
-                        .cornerRadius(32)
-                        .padding(.horizontal)
-                    .padding(.bottom, 10)
-                    .frame(alignment: .trailing)
+                    .background(Colors().ColorButton)
+                    .cornerRadius(32)
+                    .padding(.horizontal)
                     
-                }// Stack maior
-            }
-        }
+                }
+            }.edgesIgnoringSafeArea(.all)
+        }.environmentObject(viewModel)
     }
 }
 

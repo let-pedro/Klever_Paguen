@@ -24,10 +24,9 @@ struct RegistrarService {
             
             if error == nil {
                 completion(true)
-                
                 return
             }
-            print("Erro request \(error?.localizedDescription)")
+            print("Erro request \(String(describing: error?.localizedDescription))")
             completion(false)
             
         }.resume()

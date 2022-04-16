@@ -2,7 +2,7 @@
 import UIKit
 
 
-struct Boleto: Codable, Identifiable  {
+struct Boleto: Decodable, Identifiable  {
     let id: String
     let nome: String
     let vecimento: String

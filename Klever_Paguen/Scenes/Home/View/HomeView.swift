@@ -24,6 +24,7 @@ struct HomeView: View {
                         ForEach(viewModel.boletos){ boleto in
                             CellListaBoletos(Dateboleto: boleto)
                         }
+                        .onDelete(perform: viewModel.deletarBoleto)
                     }
                     .listStyle(PlainListStyle())
                     .onAppear{

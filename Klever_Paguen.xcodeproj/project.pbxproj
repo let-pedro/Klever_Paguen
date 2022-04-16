@@ -16,7 +16,6 @@
 		F388FE2F2809D7E1007668BB /* FieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE2E2809D7E1007668BB /* FieldsView.swift */; };
 		F388FE342809E5C4007668BB /* RegistrarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE332809E5C4007668BB /* RegistrarService.swift */; };
 		F388FE3A2809FD5D007668BB /* RegistrarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE392809FD5D007668BB /* RegistrarViewModel.swift */; };
-		F388FE3F280A03AE007668BB /* boleto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE3E280A03AE007668BB /* boleto.swift */; };
 		F388FE45280A1FE3007668BB /* ModalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE44280A1FE2007668BB /* ModalEditorView.swift */; };
 		F38C1EB3280A2BB5009F2146 /* ModalEditorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38C1EB2280A2BB5009F2146 /* ModalEditorService.swift */; };
 		F38C1EC0280A2E44009F2146 /* ModalEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38C1EBF280A2E44009F2146 /* ModalEditorViewModel.swift */; };
@@ -58,7 +57,6 @@
 		F388FE2E2809D7E1007668BB /* FieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsView.swift; sourceTree = "<group>"; };
 		F388FE332809E5C4007668BB /* RegistrarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarService.swift; sourceTree = "<group>"; };
 		F388FE392809FD5D007668BB /* RegistrarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarViewModel.swift; sourceTree = "<group>"; };
-		F388FE3E280A03AE007668BB /* boleto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boleto.swift; sourceTree = "<group>"; };
 		F388FE44280A1FE2007668BB /* ModalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalEditorView.swift; sourceTree = "<group>"; };
 		F38C1EB2280A2BB5009F2146 /* ModalEditorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalEditorService.swift; sourceTree = "<group>"; };
 		F38C1EBF280A2E44009F2146 /* ModalEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalEditorViewModel.swift; sourceTree = "<group>"; };
@@ -141,20 +139,11 @@
 		F388FE182809D303007668BB /* RegistrarBoleto */ = {
 			isa = PBXGroup;
 			children = (
-				F388FE192809D3BC007668BB /* Model */,
 				F388FE1A2809D3C3007668BB /* Networking */,
 				F388FE1C2809D3DF007668BB /* ViewModel */,
 				F388FE1B2809D3CE007668BB /* View */,
 			);
 			path = RegistrarBoleto;
-			sourceTree = "<group>";
-		};
-		F388FE192809D3BC007668BB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F388FE3E280A03AE007668BB /* boleto.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F388FE1A2809D3C3007668BB /* Networking */ = {
@@ -488,7 +477,6 @@
 				F388FE3A2809FD5D007668BB /* RegistrarViewModel.swift in Sources */,
 				F39EAC2128073D9300C2E8A4 /* Klever_PaguenApp.swift in Sources */,
 				F38C1EC0280A2E44009F2146 /* ModalEditorViewModel.swift in Sources */,
-				F388FE3F280A03AE007668BB /* boleto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
