@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct RegitrarView: View {
+struct RegistraBoletoView: View {
     
     // Attributes
     @StateObject var viewModel = RegistrarViewModel()
@@ -24,7 +24,7 @@ struct RegitrarView: View {
                 }
                 .frame(maxWidth: view.size.width)
                 .frame(height: 108)
-                .background(LinearGradient(gradient: Gradient(colors: GradientHeader ), startPoint: .topLeading, endPoint: .bottomTrailing))
+                .background(LinearGradient(gradient: Gradient(colors: Colors().GradientHeader ), startPoint: .topLeading, endPoint: .bottomTrailing))
                 
                 
                 VStack(spacing: 20) {
@@ -40,7 +40,7 @@ struct RegitrarView: View {
                 
                                 }
                                 .frame(width: view.size.width, height: 45)
-                                .background(RoundedRectangle(cornerRadius: 6).stroke(ColorBorderFiedls))
+                                .background(RoundedRectangle(cornerRadius: 6).stroke(Colors().ColorBorderFiedls))
                 
                                 HStack {
                                     Image("calendar_icon")
@@ -53,7 +53,7 @@ struct RegitrarView: View {
                 
                                 }
                                 .frame(width: view.size.width, height: 45)
-                                .background(RoundedRectangle(cornerRadius: 6).stroke(ColorBorderFiedls))
+                                .background(RoundedRectangle(cornerRadius: 6).stroke(Colors().ColorBorderFiedls))
                 
                 
                                 HStack(spacing: 20) {
@@ -69,7 +69,7 @@ struct RegitrarView: View {
                 
                                 }
                                 .frame(width: view.size.width, height: 45)
-                                .background(RoundedRectangle(cornerRadius: 6).stroke(ColorBorderFiedls))
+                                .background(RoundedRectangle(cornerRadius: 6).stroke(Colors().ColorBorderFiedls))
                 
                 
                                 HStack(spacing: 20) {
@@ -84,7 +84,7 @@ struct RegitrarView: View {
                                         .font(.system(size: 15))
                                 }
                                 .frame(width: view.size.width, height: 45)
-                                .background(RoundedRectangle(cornerRadius: 6).stroke(ColorBorderFiedls))
+                                .background(RoundedRectangle(cornerRadius: 6).stroke(Colors().ColorBorderFiedls))
   
                 }
                 
@@ -122,6 +122,6 @@ struct RegitrarView: View {
 
 struct RegitrarView_Previews: PreviewProvider {
     static var previews: some View {
-        RegitrarView()
+        RegistraBoletoView()
     }
 }

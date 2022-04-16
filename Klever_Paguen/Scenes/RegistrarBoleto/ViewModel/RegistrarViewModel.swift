@@ -22,6 +22,7 @@ class RegistrarViewModel: ObservableObject {
         ]
         
         service.post(parametros) { Result in
+            
             switch Result {
             case true:
                 print("Sucesso")

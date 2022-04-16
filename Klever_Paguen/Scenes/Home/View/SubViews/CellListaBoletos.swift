@@ -3,6 +3,7 @@ import SwiftUI
 
 struct CellListaBoletos: View {
     
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     var Dateboleto: Boleto
     
     var body: some View {
@@ -15,28 +16,28 @@ struct CellListaBoletos: View {
                 
                 VStack(alignment: .leading) {
                     Text(Dateboleto.nome)
-                        .font(.system(size: 16))
+                        .font(.system(size: self.horizontalSizeClass == .compact ? 16 : 23))
                         .fontWeight(.bold)
                     
                     Text(Dateboleto.vecimento)
-                        .font(.system(size: 14))
+                        .font(.system(size: self.horizontalSizeClass == .compact ? 16 : 20))
                         .foregroundColor(Color(.lightGray))
                 }
                 
                 Spacer()
                 
             Text(String(Dateboleto.valor))
-                    .font(.system(size: 14))
+                    .font(.system(size: self.horizontalSizeClass == .compact ? 14 : 20))
                     .fontWeight(.semibold)
             }
-            .frame(height: 60)
+            .frame(height: self.horizontalSizeClass == .compact ? 60 : 70)
             .padding(.horizontal,3)
     }
 }
 
 struct CellListaBoletos_Previews: PreviewProvider {
     static var previews: some View {
-        CellListaBoletos(Dateboleto: Boleto(id: "r545454",nome:"rerer", vecimento: "fdfdf", valor: 4343, barcode: "432" ))
+        CellListaBoletos(Dateboleto: Boleto(id: "1",nome:"teste", vecimento: "00/00/0000", valor: 1111, barcode: "0000000" ))
             .previewLayout(.fixed(width: .infinity, height: 60))
             
     }

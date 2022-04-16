@@ -1,5 +1,4 @@
 
-
 import Foundation
 import SwiftUI
 
@@ -13,16 +12,19 @@ struct RoundedShape: Shape {
     }
 }
 
-let GradientHeader = [
-                      Color(red: 0.99, green: 0.32, blue: 0.52, opacity: 1),
-                      Color(red: 0.42, green: 0.31, blue: 0.45, opacity: 1),
-                      Color(red: 0.21, green: 0.31, blue: 0.42, opacity: 1),
-                      ]
 
+struct Colors {
     
-let ColorBorderFiedls = Color(red: 0.21, green: 0.31, blue: 0.42, opacity: 1)
+    let GradientHeader = [
+                          Color(red: 0.99, green: 0.32, blue: 0.52, opacity: 1),
+                          Color(red: 0.42, green: 0.31, blue: 0.45, opacity: 1),
+                          Color(red: 0.21, green: 0.31, blue: 0.42, opacity: 1),
+                          ]
     
-//formatador.dateFormat = "dd/MM/yyyy HH:mm"
+    let ColorBorderFiedls = Color(red: 0.21, green: 0.31, blue: 0.42, opacity: 1)
+    let ColorButton = Color(red: 0.99, green: 0.32, blue: 0.52, opacity: 1)
+}
+
 
 struct FormatadorDeData {
         
@@ -42,4 +44,5 @@ struct FormatadorDeData {
         return formatador.date(from: data)
     }
 }
+
 

@@ -1,7 +1,6 @@
 
 import Foundation
 
-
 struct HomeService {
     
     private let urlApi: String = "https://625732594428bb6c08201927.mockapi.io/api/v1/createBoleto"

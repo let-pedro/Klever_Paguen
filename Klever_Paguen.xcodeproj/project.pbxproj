@@ -11,13 +11,16 @@
 		F349648E2807E343006625D8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349648D2807E343006625D8 /* HeaderView.swift */; };
 		F34964962807E569006625D8 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34964952807E569006625D8 /* HomeService.swift */; };
 		F349649E2807E609006625D8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349649D2807E608006625D8 /* HomeViewModel.swift */; };
-		F388FDFE2809BDAE007668BB /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FDFD2809BDAE007668BB /* Styles.swift */; };
 		F388FE142809CF6A007668BB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F388FE132809CF6A007668BB /* Launch Screen.storyboard */; };
-		F388FE1F2809D414007668BB /* RegitrarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE1E2809D414007668BB /* RegitrarView.swift */; };
+		F388FE1F2809D414007668BB /* RegistraBoletoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE1E2809D414007668BB /* RegistraBoletoView.swift */; };
 		F388FE2F2809D7E1007668BB /* FieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE2E2809D7E1007668BB /* FieldsView.swift */; };
 		F388FE342809E5C4007668BB /* RegistrarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE332809E5C4007668BB /* RegistrarService.swift */; };
 		F388FE3A2809FD5D007668BB /* RegistrarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE392809FD5D007668BB /* RegistrarViewModel.swift */; };
 		F388FE3F280A03AE007668BB /* boleto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE3E280A03AE007668BB /* boleto.swift */; };
+		F388FE45280A1FE3007668BB /* ModalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388FE44280A1FE2007668BB /* ModalEditorView.swift */; };
+		F38C1EB3280A2BB5009F2146 /* ModalEditorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38C1EB2280A2BB5009F2146 /* ModalEditorService.swift */; };
+		F38C1EC0280A2E44009F2146 /* ModalEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38C1EBF280A2E44009F2146 /* ModalEditorViewModel.swift */; };
+		F38C1EC9280A2F80009F2146 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38C1EC8280A2F80009F2146 /* Utilities.swift */; };
 		F39EAC2128073D9300C2E8A4 /* Klever_PaguenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAC2028073D9300C2E8A4 /* Klever_PaguenApp.swift */; };
 		F39EAC2528073D9A00C2E8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39EAC2428073D9A00C2E8A4 /* Assets.xcassets */; };
 		F39EAC2828073D9A00C2E8A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39EAC2728073D9A00C2E8A4 /* Preview Assets.xcassets */; };
@@ -50,13 +53,16 @@
 		F349648D2807E343006625D8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F34964952807E569006625D8 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		F349649D2807E608006625D8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		F388FDFD2809BDAE007668BB /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		F388FE132809CF6A007668BB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		F388FE1E2809D414007668BB /* RegitrarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegitrarView.swift; sourceTree = "<group>"; };
+		F388FE1E2809D414007668BB /* RegistraBoletoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistraBoletoView.swift; sourceTree = "<group>"; };
 		F388FE2E2809D7E1007668BB /* FieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsView.swift; sourceTree = "<group>"; };
 		F388FE332809E5C4007668BB /* RegistrarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarService.swift; sourceTree = "<group>"; };
 		F388FE392809FD5D007668BB /* RegistrarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarViewModel.swift; sourceTree = "<group>"; };
 		F388FE3E280A03AE007668BB /* boleto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boleto.swift; sourceTree = "<group>"; };
+		F388FE44280A1FE2007668BB /* ModalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalEditorView.swift; sourceTree = "<group>"; };
+		F38C1EB2280A2BB5009F2146 /* ModalEditorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalEditorService.swift; sourceTree = "<group>"; };
+		F38C1EBF280A2E44009F2146 /* ModalEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalEditorViewModel.swift; sourceTree = "<group>"; };
+		F38C1EC8280A2F80009F2146 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F39EAC1D28073D9300C2E8A4 /* Klever_Paguen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klever_Paguen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39EAC2028073D9300C2E8A4 /* Klever_PaguenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Klever_PaguenApp.swift; sourceTree = "<group>"; };
 		F39EAC2428073D9A00C2E8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,7 +115,6 @@
 		F337DCC32807C3D900241BFD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F350F65528085AFE0095854D /* Model */,
 				F34964942807E54F006625D8 /* Networking */,
 				F34964932807E544006625D8 /* ViewModel */,
 				F3D8AAEA2807C51000A88585 /* View */,
@@ -131,22 +136,6 @@
 				F34964952807E569006625D8 /* HomeService.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		F350F65528085AFE0095854D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F39EAC6D280754DE00C2E8A4 /* Boleto.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F388FDFC2809BD84007668BB /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				F388FDFD2809BDAE007668BB /* Styles.swift */,
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F388FE182809D303007668BB /* RegistrarBoleto */ = {
@@ -180,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				F388FE1D2809D3EB007668BB /* SubViews */,
-				F388FE1E2809D414007668BB /* RegitrarView.swift */,
+				F388FE1E2809D414007668BB /* RegistraBoletoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +188,56 @@
 				F388FE2E2809D7E1007668BB /* FieldsView.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		F388FE43280A1F68007668BB /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				F38C1EB1280A2B86009F2146 /* Networking */,
+				F38C1EB0280A2B75009F2146 /* ViewModel */,
+				F38C1EAF280A2B6C009F2146 /* View */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		F38C1EAF280A2B6C009F2146 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F388FE44280A1FE2007668BB /* ModalEditorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F38C1EB0280A2B75009F2146 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F38C1EBF280A2E44009F2146 /* ModalEditorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F38C1EB1280A2B86009F2146 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F38C1EB2280A2BB5009F2146 /* ModalEditorService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F38C1EC7280A2F67009F2146 /* Ultils */ = {
+			isa = PBXGroup;
+			children = (
+				F38C1EC8280A2F80009F2146 /* Utilities.swift */,
+			);
+			path = Ultils;
+			sourceTree = "<group>";
+		};
+		F38C1ED3280A3065009F2146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F39EAC6D280754DE00C2E8A4 /* Boleto.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F39EAC1428073D9300C2E8A4 = {
@@ -224,8 +263,9 @@
 		F39EAC1F28073D9300C2E8A4 /* Klever_Paguen */ = {
 			isa = PBXGroup;
 			children = (
-				F388FDFC2809BD84007668BB /* New Group */,
 				F39EAC4E28073DF700C2E8A4 /* Application */,
+				F38C1EC7280A2F67009F2146 /* Ultils */,
+				F38C1ED3280A3065009F2146 /* Model */,
 				F39EAC4F28073E0C00C2E8A4 /* Scenes */,
 				F39EAC2928073D9A00C2E8A4 /* Info.plist */,
 				F39EAC2628073D9A00C2E8A4 /* Preview Content */,
@@ -274,6 +314,7 @@
 				F30568C22809457F00D1577F /* Launch */,
 				F337DCC32807C3D900241BFD /* Home */,
 				F388FE182809D303007668BB /* RegistrarBoleto */,
+				F388FE43280A1F68007668BB /* Editor */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -432,18 +473,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F388FDFE2809BDAE007668BB /* Styles.swift in Sources */,
 				F3D8AAEC2807C52200A88585 /* HomeView.swift in Sources */,
+				F38C1EB3280A2BB5009F2146 /* ModalEditorService.swift in Sources */,
 				F39EAC6E280754DE00C2E8A4 /* Boleto.swift in Sources */,
 				F34964962807E569006625D8 /* HomeService.swift in Sources */,
 				F34964892807D0CE006625D8 /* CellListaBoletos.swift in Sources */,
+				F388FE45280A1FE3007668BB /* ModalEditorView.swift in Sources */,
 				F388FE2F2809D7E1007668BB /* FieldsView.swift in Sources */,
 				F388FE342809E5C4007668BB /* RegistrarService.swift in Sources */,
 				F349649E2807E609006625D8 /* HomeViewModel.swift in Sources */,
-				F388FE1F2809D414007668BB /* RegitrarView.swift in Sources */,
+				F38C1EC9280A2F80009F2146 /* Utilities.swift in Sources */,
+				F388FE1F2809D414007668BB /* RegistraBoletoView.swift in Sources */,
 				F349648E2807E343006625D8 /* HeaderView.swift in Sources */,
 				F388FE3A2809FD5D007668BB /* RegistrarViewModel.swift in Sources */,
 				F39EAC2128073D9300C2E8A4 /* Klever_PaguenApp.swift in Sources */,
+				F38C1EC0280A2E44009F2146 /* ModalEditorViewModel.swift in Sources */,
 				F388FE3F280A03AE007668BB /* boleto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

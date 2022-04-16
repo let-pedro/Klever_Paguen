@@ -1,8 +1,6 @@
 
 import Foundation
 
-
-
 class HomeViewModel: ObservableObject {
     
     @Published var boletos: [Boleto]
@@ -14,8 +12,6 @@ class HomeViewModel: ObservableObject {
         self.boletos = []
         self.totalDeDividas = 0.0
         self.service = HomeService()
-        
-        ListarBoletos()
     }
     
     
@@ -33,6 +29,7 @@ class HomeViewModel: ObservableObject {
     
     
     func SomarDividas(){
+        self.totalDeDividas = 0.0
         for boleto in boletos {
             totalDeDividas += Double(boleto.valor)
         }
