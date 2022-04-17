@@ -1,16 +1,19 @@
 
+
 import SwiftUI
 
-struct RegistraBoletoView: View {
+struct EditorView: View {
     
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    @StateObject var viewModel = RegistrarViewModel()
-        
+    @StateObject var viewModel = EditorViewModel()
+    
+    var boletoEdit: Boleto
+
     var body: some View {
         GeometryReader { view in
             VStack {
                 HStack {
-                    Text("Cadastra Boleto")
+                    Text("Editar Boleto \(boletoEdit.nome)")
                         .font(.custom("Gilroy", size: self.horizontalSizeClass == .compact ? 20: 30))
                         .foregroundColor(.white)
                     
@@ -21,8 +24,8 @@ struct RegistraBoletoView: View {
                 
                 Spacer()
                 
-                ScrollView(.vertical, showsIndicators: false){
-                    FieldsView()
+                ScrollView(.vertical, showsIndicators: false) {
+                    FiedsEditorView(boleto: boletoEdit)
                         .frame(height: view.size.height)
                 }
                 .padding()
@@ -37,7 +40,7 @@ struct RegistraBoletoView: View {
                     
                     Spacer()
                     
-                    Button { viewModel.novoRegistro()
+                    Button { viewModel.AtulizarRegistro()
                         
                     } label: {
                         Image(systemName: "chevron.right")
@@ -53,7 +56,6 @@ struct RegistraBoletoView: View {
                 .padding(.vertical,10)
                 .padding(.horizontal,30)
                 .background(Colors().ColorButton)
-                
             }
             .frame(width: view.size.width, height: view.size.height)
             .ignoresSafeArea()
@@ -62,9 +64,16 @@ struct RegistraBoletoView: View {
     }
 }
 
-struct RegitrarView_Previews: PreviewProvider {
+struct EditorView_Previews: PreviewProvider {
     static var previews: some View {
-        RegistraBoletoView()
-            .previewDevice("iPhone 8")
+        Group{
+            EditorView(boletoEdit: Boleto(id: "0", nome: "teste", vecimento: "00/00/000", valor: 111, barcode:  "000000"))
+                .previewDevice("iPad Air (4th generation)")
+
+                        
+//            EditorView(boletoEdit: Boleto(id: "0", nome: "teste", vecimento: "00/00/000", valor: 111, barcode:  "000000"))
+//                .previewDevice("iPhone 8")
+                
+        }
     }
 }

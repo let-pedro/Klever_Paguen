@@ -39,7 +39,7 @@ struct FormatadorDeData {
     func FormatStringInData(_ data: String) -> Date? {
         let formatador = DateFormatter()
         formatador.timeZone = TimeZone(abbreviation: "GMT-3")
-        formatador.dateFormat = "dd/MM/yyyy HH:mm"
+        formatador.dateFormat = "dd/MM/yyyy"
         
         return formatador.date(from: data)
     }

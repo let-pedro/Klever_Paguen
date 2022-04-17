@@ -1,11 +1,14 @@
 
+
 import SwiftUI
 
-struct FieldsView: View {
+struct FiedsEditorView: View {
     
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    @EnvironmentObject var viewModel: RegistrarViewModel
-        
+    @EnvironmentObject var viewModel: EditorViewModel
+    
+    var boleto: Boleto
+    
     var body: some View {
         GeometryReader { view in
             VStack(spacing: 20) {
@@ -73,12 +76,20 @@ struct FieldsView: View {
                 .frame(width: view.size.width, height: self.horizontalSizeClass == .compact ? 45: 57)
                 .background(RoundedRectangle(cornerRadius: 6).stroke(Colors().ColorBorderFiedls))
             }
-        } 
+            .onAppear(perform:{
+                guard let data = FormatadorDeData().FormatStringInData(boleto.vecimento) else { return }
+                viewModel.id = boleto.id
+                viewModel.nomeBoletoTextField = boleto.nome
+                viewModel.dataVencimentoTextField = data
+                viewModel.valorTextField = String(boleto.valor)
+                viewModel.barcodeTextField = boleto.barcode
+            })
+        }
     }
 }
 
-struct FieldsView_Previews: PreviewProvider {
+struct FiedsEditorView_Previews: PreviewProvider {
     static var previews: some View {
-        FieldsView()
+        FiedsEditorView( boleto: Boleto(id: "0", nome: "teste", vecimento: "00/00/000", valor: 111, barcode:  "000000"))
     }
 }

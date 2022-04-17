@@ -22,40 +22,59 @@ struct HomeView: View {
 
                     List {
                         ForEach(viewModel.boletos){ boleto in
-                            CellListaBoletos(Dateboleto: boleto)
+                            NavigationLink(destination: EditorView(boletoEdit: boleto)){
+                                CellListaBoletos(Dateboleto: boleto)
+                            }
                         }
                         .onDelete(perform: viewModel.deletarBoleto)
                     }
                     .listStyle(PlainListStyle())
-                    .onAppear{
-                        viewModel.ListarBoletos()
-                    }
                 }
             }.edgesIgnoringSafeArea(.all)
             .overlay(
                 NavigationLink(destination: RegistraBoletoView()){
-                    HStack {
-                        Spacer()
-                        Text("Novo")
-                            .font(.custom("Avenir Medium", size: self.horizontalSizeClass == .compact ? 17: 22))
+                    HStack{
+                        Text("Adicionar")
+                            .font(.title3)
+                            .fontWeight(.bold)
                             .foregroundColor(.white)
-                    
-                        Spacer()
+                        
+                        //Spacer()
+                        
+                        Image(systemName: "chevron.right")
+                            .font(.body)
+                            .foregroundColor(.white)
+                            .frame(width: 40, height: 40)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .strokeBorder(Color.white.opacity(0.3),lineWidth: 1)
+                            )
                     }
-                    .padding(.vertical)
+                    .padding(.vertical,10)
+                    .padding(.horizontal,30)
                     .background(Colors().ColorButton)
-                    .cornerRadius(32)
-                    .padding(.horizontal)
-                },alignment: .bottom
+                    .clipShape(RoundedShape(corners: [.topLeft]))
+                },alignment: .bottomTrailing
             )
         }
         .environmentObject(viewModel)
         .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear{
+            viewModel.SomarDividas()
+        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        //HomeView()
+        
+        Group{
+//            HomeView()
+//                .previewDevice("iPad Air (4th generation)")
+            
+            HomeView()
+                .previewDevice("iPhone 8")
+        }
     }
 }

@@ -1,39 +1,36 @@
 
 import Foundation
 
-
-class RegistrarViewModel: ObservableObject {
+class EditorViewModel: ObservableObject {
     
+    @Published  var id: String = ""
     @Published  var nomeBoletoTextField: String = ""
     @Published  var dataVencimentoTextField: Date  = Date()
     @Published  var valorTextField: String = ""
     @Published  var barcodeTextField: String = ""
-
-    let service: RegistrarService
+    let service: EditorService
     
     init() {
-        self.service = RegistrarService()
+        self.service = EditorService()
     }
     
-    
-    func novoRegistro(){
+    func AtulizarRegistro(){
         guard let valor = Int(valorTextField) else { return }
         
         let parametros: [String: Any] = [
+            "id": id,
             "nome_do_Boleto": nomeBoletoTextField,
             "data_vecimento": FormatadorDeData().FormatDataInString(dataVencimentoTextField),
             "valor": valor,
             "barcode": barcodeTextField
         ]
-        
-        service.post(parametros) { Result in
 
-            switch Result {
-            case true:
-                print("Sucesso")
-            case false:
-                print("Failed to fetch posts: ")
+        service.put(id,parametros) { Result in
+            guard Result != nil else {
+                print("Atualizado com Sucesso")
+                return
             }
+            print("Erro ao atualizar")
         }
     }
 }

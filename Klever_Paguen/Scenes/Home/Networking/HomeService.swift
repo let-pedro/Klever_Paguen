@@ -19,10 +19,11 @@ struct HomeService {
                 }
 
                 guard let data = data else { return }
-
                 do {
                     let ArrayBoletos = try JSONDecoder().decode([Boleto].self, from: data)
-                    completion(.success(ArrayBoletos))
+                    DispatchQueue.main.async {
+                        completion(.success(ArrayBoletos))
+                    }
                 }catch  {
                     print(error.localizedDescription)
                     completion(.failure(error))
@@ -41,20 +42,12 @@ struct HomeService {
         
        
         URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
-            DispatchQueue.main.async {
-                if error != nil {
-                    print("error", error?.localizedDescription ?? "")
-                    return
-                }
-                    
-                if let response = response as? HTTPURLResponse, response.statusCode != 200 {
-                    let errorString = String(data: data ?? Data(), encoding: .utf8) ?? ""
-                    completion(NSError(domain: "", code: response.statusCode, userInfo: [NSLocalizedDescriptionKey: errorString]))
-                    return
-                }
-                    
-                completion(nil)
-            }
+            if error != nil {
+                print("error", error?.localizedDescription ?? "")
+                completion(error)
+                return
+            }                
+            completion(nil)
         }.resume()
     }
 }

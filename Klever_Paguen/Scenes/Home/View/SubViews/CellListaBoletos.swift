@@ -11,22 +11,22 @@ struct CellListaBoletos: View {
                 Image("payment")
                     .resizable()
                     .clipShape(Circle())
-                    .frame(width: 50, height: 50)
+                    .frame(width: self.horizontalSizeClass == .compact ? 40 : 50, height: self.horizontalSizeClass == .compact ? 40 : 50)
                 
                 
                 VStack(alignment: .leading) {
                     Text(Dateboleto.nome)
-                        .font(.system(size: self.horizontalSizeClass == .compact ? 16 : 23))
+                        .font(.system(size: self.horizontalSizeClass == .compact ? 20 : 23))
                         .fontWeight(.bold)
                     
                     Text(Dateboleto.vecimento)
-                        .font(.system(size: self.horizontalSizeClass == .compact ? 16 : 20))
+                        .font(.system(size: self.horizontalSizeClass == .compact ? 14 : 18))
                         .foregroundColor(Color(.lightGray))
                 }
                 
                 Spacer()
                 
-            Text(String(Dateboleto.valor))
+            Text(String("R$ \(Dateboleto.valor)"))
                     .font(.system(size: self.horizontalSizeClass == .compact ? 14 : 20))
                     .fontWeight(.semibold)
             }
@@ -38,7 +38,5 @@ struct CellListaBoletos: View {
 struct CellListaBoletos_Previews: PreviewProvider {
     static var previews: some View {
         CellListaBoletos(Dateboleto: Boleto(id: "1",nome:"teste", vecimento: "00/00/0000", valor: 1111, barcode: "0000000" ))
-            .previewLayout(.fixed(width: .infinity, height: 60))
-            
     }
 }
