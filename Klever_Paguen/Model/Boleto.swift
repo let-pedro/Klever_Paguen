@@ -6,7 +6,7 @@ struct Boleto: Decodable, Identifiable  {
     let id: String
     let nome: String
     let vecimento: String
-    let valor: Int
+    let valor: Double
     let barcode: String
     
     enum CodingKeys: String, CodingKey {

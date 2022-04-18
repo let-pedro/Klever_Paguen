@@ -6,7 +6,7 @@ struct RegistrarService {
     
     private let urlApi: String = "https://625732594428bb6c08201927.mockapi.io/api/v1/createBoleto"
     
-    func post(_ parametros: [String: Any], completion: @escaping(Bool) -> Void) {
+    func post(_ parametros: [String: Any], completion: @escaping(Error?) -> Void) {
         
         guard let url = URL(string: "\(urlApi)") else {
             print ("Not found url")
@@ -21,13 +21,12 @@ struct RegistrarService {
         requisicao.httpBody = body
         
         URLSession.shared.dataTask(with: requisicao) { data, resposta, error in
-            
-            if error == nil {
-                completion(true)
+            if error != nil {
+                print("error", error?.localizedDescription ?? "")
+                completion(error)
                 return
             }
-            print("Erro request \(String(describing: error?.localizedDescription))")
-            completion(false)
+            completion(nil)
             
         }.resume()
     }

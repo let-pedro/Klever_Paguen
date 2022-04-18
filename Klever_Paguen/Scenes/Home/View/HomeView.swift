@@ -29,6 +29,9 @@ struct HomeView: View {
                         .onDelete(perform: viewModel.deletarBoleto)
                     }
                     .listStyle(PlainListStyle())
+                    .onAppear{
+                        viewModel.ListarBoletos()
+                        
                 }
             }.edgesIgnoringSafeArea(.all)
             .overlay(
@@ -59,8 +62,7 @@ struct HomeView: View {
         }
         .environmentObject(viewModel)
         .navigationViewStyle(StackNavigationViewStyle())
-        .onAppear{
-            viewModel.SomarDividas()
+        
         }
     }
 }

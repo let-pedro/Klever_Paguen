@@ -22,8 +22,6 @@
 		F39EAC2128073D9300C2E8A4 /* Klever_PaguenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAC2028073D9300C2E8A4 /* Klever_PaguenApp.swift */; };
 		F39EAC2528073D9A00C2E8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39EAC2428073D9A00C2E8A4 /* Assets.xcassets */; };
 		F39EAC2828073D9A00C2E8A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39EAC2728073D9A00C2E8A4 /* Preview Assets.xcassets */; };
-		F39EAC3328073D9B00C2E8A4 /* Klever_PaguenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAC3228073D9B00C2E8A4 /* Klever_PaguenTests.swift */; };
-		F39EAC3E28073D9B00C2E8A4 /* Klever_PaguenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAC3D28073D9B00C2E8A4 /* Klever_PaguenUITests.swift */; };
 		F39EAC6E280754DE00C2E8A4 /* Boleto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAC6D280754DE00C2E8A4 /* Boleto.swift */; };
 		F39EAC89280769C900C2E8A4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F39EAC88280769C900C2E8A4 /* Alamofire */; };
 		F3A42733280B137A001C36B6 /* FiedsEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A42732280B137A001C36B6 /* FiedsEditorView.swift */; };
@@ -67,11 +65,7 @@
 		F39EAC2728073D9A00C2E8A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F39EAC2928073D9A00C2E8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F39EAC2E28073D9B00C2E8A4 /* Klever_PaguenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Klever_PaguenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F39EAC3228073D9B00C2E8A4 /* Klever_PaguenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Klever_PaguenTests.swift; sourceTree = "<group>"; };
-		F39EAC3428073D9B00C2E8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F39EAC3928073D9B00C2E8A4 /* Klever_PaguenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Klever_PaguenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F39EAC3D28073D9B00C2E8A4 /* Klever_PaguenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Klever_PaguenUITests.swift; sourceTree = "<group>"; };
-		F39EAC3F28073D9B00C2E8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F39EAC6D280754DE00C2E8A4 /* Boleto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boleto.swift; sourceTree = "<group>"; };
 		F3A42732280B137A001C36B6 /* FiedsEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiedsEditorView.swift; sourceTree = "<group>"; };
 		F3A4273D280B143A001C36B6 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
@@ -236,8 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				F39EAC1F28073D9300C2E8A4 /* Klever_Paguen */,
-				F39EAC3128073D9B00C2E8A4 /* Klever_PaguenTests */,
-				F39EAC3C28073D9B00C2E8A4 /* Klever_PaguenUITests */,
 				F39EAC1E28073D9300C2E8A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -271,24 +263,6 @@
 				F39EAC2728073D9A00C2E8A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F39EAC3128073D9B00C2E8A4 /* Klever_PaguenTests */ = {
-			isa = PBXGroup;
-			children = (
-				F39EAC3228073D9B00C2E8A4 /* Klever_PaguenTests.swift */,
-				F39EAC3428073D9B00C2E8A4 /* Info.plist */,
-			);
-			path = Klever_PaguenTests;
-			sourceTree = "<group>";
-		};
-		F39EAC3C28073D9B00C2E8A4 /* Klever_PaguenUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F39EAC3D28073D9B00C2E8A4 /* Klever_PaguenUITests.swift */,
-				F39EAC3F28073D9B00C2E8A4 /* Info.plist */,
-			);
-			path = Klever_PaguenUITests;
 			sourceTree = "<group>";
 		};
 		F39EAC4E28073DF700C2E8A4 /* Application */ = {
@@ -496,7 +470,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39EAC3328073D9B00C2E8A4 /* Klever_PaguenTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +477,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39EAC3E28073D9B00C2E8A4 /* Klever_PaguenUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

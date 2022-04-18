@@ -36,16 +36,13 @@ class HomeViewModel: ObservableObject {
     
     
     func deletarBoleto(indexSet: IndexSet){
-        
         let id = indexSet.map{ self.boletos[$0].id }
         self.service.delete(id: id[0]){ result in
             guard result != nil else {
-                print("Erro ao excluir \(result?.localizedDescription)")
                 self.ListarBoletos()
                 return
             }
-            print("Escluido com sucesso")
-            //self.ListarBoletos()
+            print("Erro ao excluir \(String(describing: result?.localizedDescription))")
         }
     }
 }

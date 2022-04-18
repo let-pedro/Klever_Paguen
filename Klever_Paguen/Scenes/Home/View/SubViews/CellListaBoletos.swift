@@ -16,7 +16,7 @@ struct CellListaBoletos: View {
                 
                 VStack(alignment: .leading) {
                     Text(Dateboleto.nome)
-                        .font(.system(size: self.horizontalSizeClass == .compact ? 20 : 23))
+                        .font(.system(size: self.horizontalSizeClass == .compact ? 16 : 23))
                         .fontWeight(.bold)
                     
                     Text(Dateboleto.vecimento)

@@ -29,6 +29,10 @@ struct RegistraBoletoView: View {
                 
                 Spacer()
                 
+                if viewModel.fieldsCorretas {
+                    Text("Todos os campos precisar ser preenchidos")
+                        .foregroundColor(.red)
+                }
                 HStack{
                     Text("Salvar")
                         .font(.title3)
@@ -37,9 +41,10 @@ struct RegistraBoletoView: View {
                     
                     Spacer()
                     
-                    Button { viewModel.novoRegistro()
+                    
+                    Button (action: { viewModel.novoRegistro()
                         
-                    } label: {
+                    }, label: {
                         Image(systemName: "chevron.right")
                             .font(.body)
                             .foregroundColor(.white)
@@ -48,7 +53,23 @@ struct RegistraBoletoView: View {
                                 RoundedRectangle(cornerRadius: 10)
                                     .strokeBorder(Color.white.opacity(0.3),lineWidth: 1)
                             )
-                    }
+                    })
+                    .alert(isPresented: $viewModel.ativaAlerta, content: {
+                        switch viewModel.sucessoRequest {
+                        case true:
+                            return Alert(title: Text("Sucesso 😀"), message: Text("O boleto foi registrado com Sucesso"), primaryButton: .default(Text("Confirmar"), action: {
+                                viewModel.ativaAlerta = false
+                                viewModel.sucessoRequest = false
+                                viewModel.limpaFields()
+                            }), secondaryButton: .cancel())
+                        
+                        case false:
+                            return Alert(title: Text("Error 😔"), message: Text("Ocorreu um erro no momento de registrar o boleto, verificar os dados registrado ou tenta novamente depois"), primaryButton: .default(Text("Confirmar"), action: {
+                                viewModel.ativaAlerta = false
+                                viewModel.sucessoRequest = false
+                            }), secondaryButton: .cancel())
+                        }
+                    })
                 }
                 .padding(.vertical,10)
                 .padding(.horizontal,30)
